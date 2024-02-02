@@ -8,143 +8,57 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sofia+Sans+Extra+Condensed:ital,wght@0,1;0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,1;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Stint+Ultra+Condensed&display=swap" rel="stylesheet">
-    <style>
-      body {
-        /* font-family: 'Arizonia', cursive; */
-        /* font-family: 'Playfair Display', 'Stint Ultra Condensed', serif; */
-        font-family: -apple-system, BlinkMacSystemFont,
-                      'Trebuchet MS', 'Lucida Sans Unicode',
-                      'Segoe UI', 'Sofia Sans Extra Condensed',
-                      'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans',
-                      'Franklin Gothic Medium', 'Arial Narrow', Arial,
-                      'Lucida Grande', 'Lucida Sans', Arial,
-                      'Helvetica Neue',
-                      'Lato', 'Roboto', 'Roboto Condensed',
-                      sans-serif;
-        font-size: 24px;
-        color: #2b2b2b;
-      }
-      ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-      }
-      .header {
-        display: flex;
-        justify-content: space-between;
-      }
-      .header img {
-        width: 10vmin;
-        padding: 4vmin;
-        width: 6vmax;
-      }
-      .header svg {
-        width: 10vmin;
-        height: 10vmin;
-        padding: 1.2vmin;
-      }
-      .header-booki-nav-links {
-        display: flex;
-        justify-content: end;
-        flex-wrap: wrap;
-      }
-      .header-booki-nav-links li {
-        padding: 4vmin;
-      }
-      .header-booki-nav-links li a:link {
-        text-decoration: none;
-        color: #477ffc;
-      }
-      .header-booki-nav-links li a:visited {
-        text-decoration: none;
-      }
-      .header-booki-nav-links li a:hover {
-        text-decoration: underline;
-      }
-      .header-booki-nav-links li a:active {
-        text-decoration: underline;
-      }
-      .header-booki-nav-links li .active {
-        color: #477ffc;
-      }
-      .header-booki-nav-links li .visited {
-        color: #6f7072;
-      }
-      .header-links-list {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-      }
-      
-      .wrapper {
-        width: 90%;
-        margin: 0 auto;
-        /* border: 3px dotted navy; */
-      }
-      .photo-title {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-      }
-      .photo-title svg {
-        width: 60vmin;
-        height: 60vmin;
-        padding: 1.2vmin;
-      }
-      .main-caption-header {
-        margin: 4% auto;
-        font-family: 'Lato';
-        font-size: 7rem;
-        font-weight: 100;
-        text-align: center;
-        color: #6e1e6e;
-      }
-      .main-caption-subheader {
-        margin: 4% auto;
-        font-family: 'Lato';
-        font-size: 4rem;
-        font-weight: 200;
-        text-align: center;
-        color: #6e1e6e;
-      }
-      .calendar {
-        text-align: center;
-      }
-      .calendar svg {
-        width: 60vmin;
-        height: 70vmin;
-        padding: 2vmin;
-      }
-
-      .footer {
-        display: flex;
-        justify-content: space-around;
-        margin: 5vmin 0 0 0;
-        padding: 5vmin 0;
-        font-size: 0.96rem;
-        background-color: #f2f2f2;
-      }
-      .footer-column {
-        width: 30%;
-      }
-      .footer-column-title {
-        padding: 1vmin 0;
-        font-weight: 600;
-      }
-      .footer-column-string {
-        padding: 1vmin 0;
-      }
-      
-      
-      @media screen and (max-width: 960px) {
-      }
-      @media screen and (max-width: 560px) {
-      }
-
-    </style>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/vars.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header>
+      <div class="header-slide-show-container">
+        <div class="header-slider">
+          <!-- <img  src="assets/imgs/headerSlideSHOW/2024-02-01_001.jpeg"
+                alt="assets/imgs/headerSlideSHOW/2024-02-01_001.jpeg"
+                id="header-slide-show-img-001"
+                class="header-slide-show-img">
+          <img  src="assets/imgs/headerSlideSHOW/2024-02-01_002.jpeg"
+                alt="assets/imgs/headerSlideSHOW/2024-02-01_002.jpeg"
+                id="header-slide-show-img-002"
+                class="header-slide-show-img">
+          <img  src="assets/imgs/headerSlideSHOW/2024-02-01_003.jpeg"
+                alt="assets/imgs/headerSlideSHOW/2024-02-01_003.jpeg"
+                id="header-slide-show-img-003"
+                class="header-slide-show-img">
+          <img  src="assets/imgs/headerSlideSHOW/2024-02-01_004.jpeg"
+                alt="assets/imgs/headerSlideSHOW/2024-02-01_004.jpeg"
+                id="header-slide-show-img-004"
+                class="header-slide-show-img">
+          <img  src="assets/imgs/headerSlideSHOW/2024-02-01_005.jpeg"
+                alt="assets/imgs/headerSlideSHOW/2024-02-01_005.jpeg"
+                id="header-slide-show-img-005"
+                class="header-slide-show-img">
+          <img  src="assets/imgs/headerSlideSHOW/2024-02-01_006.jpeg"
+                alt="assets/imgs/headerSlideSHOW/2024-02-01_006.jpeg"
+                id="header-slide-show-img-006"
+                class="header-slide-show-img">
+          <img  src="assets/imgs/headerSlideSHOW/2024-02-01_007.jpeg"
+                alt="assets/imgs/headerSlideSHOW/2024-02-01_007.jpeg"
+                id="header-slide-show-img-007"
+                class="header-slide-show-img">
+          <img  src="assets/imgs/headerSlideSHOW/2024-02-01_008.jpeg"
+                alt="assets/imgs/headerSlideSHOW/2024-02-01_008.jpeg"
+                id="header-slide-show-img-008"
+                class="header-slide-show-img">
+          <img  src="assets/imgs/headerSlideSHOW/2024-02-01_009.jpeg"
+                alt="assets/imgs/headerSlideSHOW/2024-02-01_009.jpeg"
+                id="header-slide-show-img-009"
+                class="header-slide-show-img">
+          <img  src="assets/imgs/headerSlideSHOW/2024-02-01_010.jpeg"
+                alt="assets/imgs/headerSlideSHOW/2024-02-01_010.jpeg"
+                id="header-slide-show-img-010"
+                class="header-slide-show-img"> -->
+        </div>
+      </div>
       <div class="header">
         <!-- <img src="assets/images/logo/test-icon.svg"
                   alt="assets/images/logo/test-icon.svg"> -->
